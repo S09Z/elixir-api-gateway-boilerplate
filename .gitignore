@@ -1,0 +1,86 @@
+node_modules
+# Keep environment variables out of version control
+
+.DS_Store
+**/.env
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+.pnp.*
+
+# Elixir/Erlang specific
+/_build/
+/deps/
+*.beam
+*.plt
+*.heex
+
+# Generated on crash by the VM
+erl_crash.dump
+
+# Static artifact directory
+/priv/static/
+
+# Files related to test
+/test/test_helper.exs
+/test/*_test.exs
+
+# The directory Mix will write compiled artifacts to.
+/_build/
+
+# If you run "mix test --cover", coverage assets end up here.
+/cover/
+
+# The directory Mix downloads your dependencies sources to.
+/deps/
+
+# Where third-party dependencies like databases are stored.
+/.elixir_ls/
+/.fetch/
+/storage/
+
+# Ignore .fetch directory used by mix deps.get
+/.fetch
+
+# Local configuration
+/config/dev.secret.exs
+/config/test.secret.exs
+/config/prod.secret.exs
+
+# Ignore npm packages
+/assets/node_modules/
+
+# Ignore package lock files
+mix.lock
+yarn.lock
+package-lock.json
+
+# Ignore System files
+.DS_Store
+Thumbs.db
+
+# Docker related
+/docker/volumes/
+/docker/tmp/
+/docker/containers/
+
+# Ignore IDE specific files
+/.idea/
+/.vscode/
+
+# Ignore OS specific files
+.DS_Store
+Thumbs.db
+
+# Ignore files related to asdf version manager
+.tool-versions
+
+# Prometheus data
+/monitoring/prometheus/data/
+
+# Grafana data
+/monitoring/grafana/data/
+
+# Elasticsearch data
+/logging/elasticsearch/data/

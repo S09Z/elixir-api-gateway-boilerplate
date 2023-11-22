@@ -1,0 +1,11 @@
+{
+  "name": "elixir-api-gateway-boilerplate",
+  "packageManager": "yarn@3.5.0",
+  "devDependencies": {
+    "prisma": "^5.6.0"
+  },
+  "scripts": {
+    "prisma:migrate": "prisma migrate dev",
+    "prisma:studio": "prisma studio"
+  }
+}
